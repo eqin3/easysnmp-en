@@ -94,7 +94,7 @@ setup(
     cmdclass={'test': PyTest},
     ext_modules=[
         Extension(
-            'easysnmpen.interface', ['easysnmpen/interface.c'],
+            'easysnmp.interface', ['easysnmp/interface.c'],
             library_dirs=libdirs, include_dirs=incdirs, libraries=libs,
             extra_compile_args=compile_args
         )
