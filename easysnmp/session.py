@@ -174,6 +174,7 @@ class Session(object):
         retry_no_such=False, abort_on_nonexistent=False
     ):
         # Validate and extract the remote port
+        '''
         if ':' in hostname:
             if remote_port:
                 raise ValueError(
@@ -183,7 +184,7 @@ class Session(object):
             else:
                 hostname, remote_port = hostname.split(':')
                 remote_port = int(remote_port)
-
+        '''
         self.hostname = hostname
         self.version = version
         self.community = community
