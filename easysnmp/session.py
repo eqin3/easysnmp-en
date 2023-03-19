@@ -174,8 +174,7 @@ class Session(object):
         retry_no_such=False, abort_on_nonexistent=False
     ):
         # Validate and extract the remote port
-        '''
-        if ':' in hostname:
+        '''if ':' in hostname:
             if remote_port:
                 raise ValueError(
                     'a remote port was specified yet the hostname appears '
