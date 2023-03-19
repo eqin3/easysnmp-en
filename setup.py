@@ -80,7 +80,7 @@ with open('README.rst') as f:
 
 
 setup(
-    name='easysnmp',
+    name='easysnmpen',
     version='0.2.5',
     description='A blazingly fast and Pythonic SNMP library based on the '
                 'official Net-SNMP bindings',
@@ -89,12 +89,12 @@ setup(
     author_email='coblekent@gmail.com',
     url='https://github.com/kamakazikamikaze/easysnmp',
     license='BSD',
-    packages=['easysnmp'],
+    packages=['easysnmpen'],
     tests_require=['pytest-cov', 'pytest-flake8', 'pytest-sugar', 'pytest'],
     cmdclass={'test': PyTest},
     ext_modules=[
         Extension(
-            'easysnmp.interface', ['easysnmp/interface.c'],
+            'easysnmpen.interface', ['easysnmpen/interface.c'],
             library_dirs=libdirs, include_dirs=incdirs, libraries=libs,
             extra_compile_args=compile_args
         )
